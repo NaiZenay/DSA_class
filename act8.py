@@ -1,19 +1,31 @@
-#Tabla Hash basica
-class TablaHash:
-    def __init__(self,length):
-        self.length=length
-        self.tabla=[[None]*length]
+#Diccionario con puntajes de equipo de fut bol
+equipos={
+    "chivas":3,
+    "atlas": 8,
+    "america": 2,
+    "barcelona": 1,
+    "Real M": 0,
+    "Pumas": 0,
+    "San luis": 4,
+    "Santos": 6,
+    "Atletico M": 1,
+    "Francia": 3,
+}
 
-    def hash(self,key):
-        hash_value=0
-        for char in s:
-            hash_value = (hash_value * 31) + ord(char)
-        return hash_value%self.length
+# Una tabla hash toma la clave asiganda al valor
+# y la procesa por medio de la funcion Hash para obtener
+# el indice en la lista de la tabla hash de volver el valor
 
-    def insert(self,key,value):
-        index=self.hash(key)
-        self.tabla[index]=[key,value]
+print(equipos["chivas"]) #Acceso individual a cada dato con la clave
 
-    def
+for equipo,puntaje in equipos.items(): #Devuelve una tupla con las claves y valores
+    print(f"Puntaje de {equipo} : {puntaje}")
+
+#Ventaja
+#Acceso a los valores en tiempo contaste
+
+#Desvetajas (mi opinion)
+#Manjear las colisiones, nada te asegura no tenerlas y al manejarlas pierda la ventaja
+#Necesitas conocer la clave (ni tan desventajoso pq para eso es)
 
 
