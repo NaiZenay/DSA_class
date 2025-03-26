@@ -1,7 +1,4 @@
 #Tabla Hash basica
-from os import remove
-
-
 class TablaHash:
     def __init__(self,length):
         self.length=length
